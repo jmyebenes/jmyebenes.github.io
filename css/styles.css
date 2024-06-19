@@ -133,7 +133,7 @@ a {
 #apps {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 56px;
+    flex-direction: column;
 }
 
 .app {
@@ -141,6 +141,9 @@ a {
     background-color: var(--white);
     width: 240px;
     height: 420px;
+    margin-top: 56px;
+    align-self: center;
+    text-align: center;
 }
 
 .primary {
@@ -208,8 +211,6 @@ a {
     }
 
     .company {
-        /* height: 24vh;
-        width: 24vh; */
         align-self: flex-start;
     }
 
@@ -226,6 +227,10 @@ a {
         margin-right: 16px;
     }
 
+    .app {
+        align-self: unset;
+    }
+
     #social {
         display: flex;
         justify-content: flex-start;
@@ -234,6 +239,12 @@ a {
     #social i {
         margin-right: 24px;
     }
+
+    #apps {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
 }
 
 
@@ -266,6 +277,10 @@ a {
         margin-right: 16px;
     }
 
+    .app {
+        align-self: unset;
+    }
+
     #social {
         display: flex;
         justify-content: flex-start;
@@ -274,4 +289,10 @@ a {
     #social i {
         margin-right: 24px;
     }
+
+    #apps {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
 }  */
