@@ -5,16 +5,15 @@
     align-items: center;
     background: white;
     box-shadow: 0 0 0 rgba(0,0,0,0);
-    height: 12rem; /* altura suficiente para el logo grande */
+    height: 12rem;
   }
   
   #logo {
     transition: all 0.4s ease;
-    height: 8rem; /* logo grande */
-    margin-bottom: -4rem; /* acerca el hero al logo sin superponer */
+    height: 8rem;
+    margin-bottom: -4rem;
   }
   
-  /* Header reducido con scroll */
   #header.scrolled {
     height: 4rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -25,7 +24,6 @@
     margin-bottom: 0;
   }
   
-  /* Clase personalizada para padding-top de hero */
   .pt-custom {
-    padding-top: 6rem;
+    padding-top: 7rem;
   }
