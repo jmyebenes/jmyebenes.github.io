@@ -1,110 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Jose Manuel Yébenes</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonkyDev - Mobile App Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-white text-gray-800 font-sans min-h-screen flex flex-col">
 
-<body>
-    <div class="section white full">
-        <div id="social">
-            <a href="https://github.com/jmyebenes" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/josemanuelyebenes/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-            <a href="mailto:josemanuelyebenes@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="https://drive.google.com/file/d/16ZQm1S0i1UiaxnIP1om4ebbHl3dUMKDD/view?usp=drive_link" target="_blank"><i class="fa fa-file"></i></a>
-    
-        </div>
-        <div id="cover" class="center">
-            <img src="res/avatar2.jpeg" />
-            <h1>Jose Manuel Yébenes</h1>
-            <h3>Desarrollador Android</h3>
-        </div>
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-sm">
+    <div class="flex items-center space-x-3">
+      <img src="media/logo.png" alt="MonkyDev logo" class="h-12">
+      <!-- <span class="text-2xl font-bold text-red-600">Monky<span class="text-gray-900">Dev</span></span> -->
     </div>
-    <div class="section gray">
-        <h2>Experiencia</h2>
-        <div id="work-experience">
+    <nav class="hidden md:flex space-x-6 text-gray-700">
+      <a href="#" class="hover:text-red-600">Home</a>
+      <a href="#apps" class="hover:text-red-600">Apps</a>
+      <a href="#contact" class="hover:text-red-600">Contact</a>
+    </nav>
+  </header>
 
-            <div class="company-container">
-                <img src="res/android_logo.jpeg" class="company" />
-                <div class="company-info">
-                    <h2>Freelance</h2>
-                    <p>Mayo 2024 - Actualmente</p>
-                    <div class="project-container">
-                        <img src="res/android_logo.jpeg" class="project" />
-                        <img src="res/android_logo.jpeg" class="project" />
-                    </div>
-                </div>
-            </div>
+  <!-- Contenido principal -->
+  <main class="flex-grow">
+    <!-- Hero -->
+    <section class="text-center px-6 py-16">
+      <h1 class="text-3xl md:text-5xl font-bold">Mobile app developer</h1>
+      <p class="mt-4 text-lg text-gray-600">I create innovative and user-friendly mobile applications.</p>
+    </section>
 
-            <div class="company-container">
-                <img src="res/vass_logo.jpeg" class="company" />
-                <div class="company-info">
-                    <h2>Vass</h2>
-                    <p>Julio 2019 - Mayo 2024</p>
-                    <div class="project-container">
-                        <img src="res/carrefour_pass.png" class="project" />
-                        <img src="res/vass_app.png" class="project" />
-                        <img src="res/renault_bank.png" class="project" />
-                        <img src="res/android_logo.jpeg" class="project" />
-                        <img src="res/santander_be.png" class="project" />
-                        <img src="res/renta4.png" class="project" />
-                        <img src="res/dia_franquicias.png" class="project" />
-                        <img src="res/android_logo.jpeg" class="project" />
-                        <img src="res/inone.png" class="project" />
-                    </div>
-                </div>
-            </div>
+    <!-- Apps -->
+    <section id="apps" class="px-6 md:px-20 py-10">
+      <h2 class="text-2xl font-bold mb-8">My apps</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-            <div class="company-container">
-                <img src="res/alvea_logo.jpeg" class="company" />
-                <div class="company-info">
-                    <h2>Alvea</h2>
-                    <p>Marzo 2019 - Julio 2019</p>
-                    <div class="project-container">
-                        <img src="res/orange_tv.png" class="project" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="company-container">
-                <img src="res/corim_solutions_logo.jpeg" class="company" />
-                <div class="company-info">
-                    <h2>Corim</h2>
-                    <p>Noviembre 2017 - Noviembre 2018</p>
-                    <div class="project-container">
-                        <img src="res/web.jpeg" class="project" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="company-container">
-                <img src="res/nutrytec_logo.jpeg" class="company" />
-                <div class="company-info">
-                    <h2>Nutrytec</h2>
-                    <p>Marzo 2017 - Noviembre 2017</p>
-                    <div class="project-container">
-                        <img src="res/android_logo.jpeg" class="project" />
-                        <img src="res/web.jpeg" class="project" />
-                    </div>
-                </div>
-            </div>
-
+        <!-- App 1 -->
+        <div class="p-6 border rounded-xl shadow-sm flex flex-col items-center">
+          <div class="flex items-center justify-center mb-4">
+            <img src="res/kromatiko.png" alt="Kromatiko" class="h-28 w-auto">
+          </div>
+          <h3 class="text-lg font-semibold text-red-600">Kromatiko</h3>
+          <button class="mt-3 px-6 py-2 bg-gray-100 rounded-md hover:bg-gray-200">Download</button>
         </div>
-    </div>
-    <div class="section secondary">
-        <h2>Portfolio</h2>
-        <div id="apps">
-            <span class="app"><p>Próximamente</p></span>
-            <span class="app"><p>Próximamente</p></span>
+
+        <!-- App 2 -->
+        <div class="p-6 border rounded-xl shadow-sm flex flex-col items-center">
+          <div class="flex items-center justify-center mb-4">
+            <img src="res/appindev3.png" alt="App in development" class="h-28 w-auto">
+          </div>
+          <h3 class="text-lg font-semibold text-red-600">App in development</h3>
+          <button class="mt-3 px-6 py-2 bg-gray-100 rounded-md hover:bg-gray-200">Coming soon</button>
         </div>
-    </div>
-    <div class="footer">
-        <p>Jose Manuel Yébenes - 2024</p>
-    </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="text-center py-10 bg-gray-50">
+    <p class="text-gray-600">Contact: 
+      <a href="mailto:info@monky.dev" class="text-red-600 hover:underline">info@monky.dev</a>
+    </p>
+  </footer>
+
 </body>
-
 </html>
