@@ -1,0 +1,27 @@
+/* Header y logo */
+#header {
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: white;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    height: 12rem;
+  }
+  
+  #logo {
+    transition: all 0.2s ease;
+    height: 8rem;
+    margin-bottom: -4rem;
+  }
+  
+  /* Hero fullscreen */
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
